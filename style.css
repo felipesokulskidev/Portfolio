@@ -1,0 +1,304 @@
+:root {
+    --background-color: #0D0D0D;
+    --link-color: #F2E205;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* Exemplo de fonte */
+    color: #333;
+}
+
+/* NAV */
+nav {
+    display: flex; /*alinha todos*/
+    justify-content: space-between; /*faz com que a classe direita e esquerda se separem*/
+    padding: 0 50px; /* o 0 representa o eixo y, e o 50 o eixo x*/
+    height: 70px; /*altura fixa*/
+    align-items: center;
+}
+
+nav .esquerda a {
+    color: var(--link-color);
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+nav .direita a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .direita a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 6px;
+}
+
+nav .direita a span{
+ margin-left: 5px;
+}
+
+nav .direita a:hover{
+    color: var(--link-color);
+    transition: .15s;
+    cursor: pointer;
+}
+
+nav .direita a:last-child:hover{
+    color: var(--link-color);
+    background-color: #262626;
+    transition: .15s;
+    cursor: pointer;
+}
+
+/* SECTION 1: hero */
+
+.hero-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; /* classes se separam*/
+    padding: 0 50px;
+    margin: 50px 0px;
+    gap: 50px; /* distancia entre o texto e a foto*/
+    margin-bottom: 100px;
+}
+
+.hero-section .texto {
+    flex: 5;
+}
+
+.hero-section .foto {
+    flex: 2;
+    display: flex; /* ajustar a foto para a esquerda*/
+    justify-content: right; /* ajustar a foto para a esquerda*/
+}
+
+.hero-section .texto h2{
+    font-size: 50px;
+    color: var(--link-color);
+}
+
+.hero-section .texto p{
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.hero-section .text .link{
+    margin-top: 25px; /* margem da parte de cima, que separa o texto <p> dos links */
+}
+
+.hero-section .texto .link a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: .15s;
+}
+
+.hero-section .texto .link a:hover{
+    color: var(--link-color);
+    border: 2px solid var(--text-color);
+    transition: .1s;
+    cursor: pointer;
+}
+
+.hero-section a span{
+    margin-left: 5px;
+}
+
+.hero-section .foto img:hover{
+    box-shadow: 0 0 15px var(--link-color),
+                0 0 35px var(--link-color),
+                0 0 80px var(--link-color);
+    transition: .3s;
+    border-radius: 5%;
+}
+
+.hero-section .foto img{
+    border-radius: 5%;
+    width: 450px;
+    border: 1px solid var(--background-color);
+}
+
+/* SECTION 2: Skills */
+
+.habilidades-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.habilidades-section h2{
+    color: var(--link-color);
+    font-size: 35px;
+    text-align: center;
+}
+
+.habilidades-section p{
+    color: var(--text-color);
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.habilidades-section .linguagens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habilidades-section .linguagens .celula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px; /* distancia entre cada caixa */
+}
+
+.habilidades-section .linguagens .celula img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.habilidades-section .linguagens span{
+    color: var(--link-color);
+    font-size: 18px;
+}
+
+.portfolio .text h2{
+    color: var(--link-color);
+    font-size: 35px;
+    text-align: center;
+}
+
+.portfolio .text p{
+    color: var(--text-color);
+    font-size: 24px;
+    text-align: center;
+}
+
+.portfolio .botao {
+    display: flex; /* Transforma este div em um contêiner flexível */
+    justify-content: center; /* Centraliza o item filho (o botão) horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio .botao button{
+    background-color: var(--link-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    border: 2px solid var(--background-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 25px 40px;
+    font-size: 25px;
+}
+
+.portfolio .botao button:hover {
+    background-color: #A69B03;
+    color: var(--text-color);
+    transition: .15s;
+    cursor: pointer;
+}
+
+/*PORTFOLIO BOTAO - verificar isso amanhã!!!!!!!!!!!*/
+
+.projetos .botao button{
+    background-color: var(--link-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    border: 2px solid var(--background-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.projetos .botao button:hover{
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+/* section contato*/
+
+.contato-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contato-section h2{
+    font-size: 35px;
+    text-align: center;
+    color: var(--link-color);
+    margin-top: 150px;
+}
+
+.contato-section .grupo{
+    display: flex;
+    gap: 50px;
+}
+
+.contato-section .grupo .texto{
+    flex: 3;
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.contato-section {
+        text-align: center; 
+        padding: 40px 0; 
+    }
+
+.contato-section a {
+    display: inline-block;
+    margin-top: 20px;          
+    font-size: 1.5rem;           
+    text-decoration: none;      
+    color: #000000;                 
+    background-color: var(--link-color);   
+    padding: 10px 20px;         
+    border-radius: 8px;        
+    transition: background-color 0.3s; 
+}
+
+.contato-section a:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.contato-section i {
+    margin-right: 8px;          
+    font-size: 24px;          
+    vertical-align: middle;    
+}

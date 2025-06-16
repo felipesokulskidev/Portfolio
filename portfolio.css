@@ -1,0 +1,133 @@
+:root {
+    --background-color: #0D0D0D;
+    --link-color: #F2E205;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+*html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* Exemplo de fonte */
+    color: #333;
+}
+
+.projetos {
+    display: flex;             /* Transforma a seção em um contêiner flexível */
+    flex-direction: column;    /* Organiza os itens (texto e botão) em coluna */
+    align-items: center;       /* Centraliza os itens horizontalmente na coluna */
+    justify-content: center;   /* Centraliza os itens verticalmente (se houver altura suficiente) */
+    text-align: center;        /* Garante que o texto (H2 e P) dentro de .text seja centralizado */
+    padding: 20px;             /* Adiciona um padding geral para não grudar nas bordas da tela */
+    box-sizing: border-box;    /* Inclui padding no cálculo da largura/altura total */
+}
+
+.projetos .botao button{
+    background-color: var(--link-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    border: 2px solid var(--background-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.projetos .botao button:hover{
+    background-color: #A69B03;
+    color: var(--text-color);
+    transition: .15s;
+    cursor: pointer;
+}
+
+.projetos .text h2{
+    color:var(--link-color);
+    font-size: 50px;
+}
+
+.projetos .text p{
+    color: var(--text-color);
+    font-size: 25px;   
+}
+
+.projetos{
+    background-color: var(--background-color);
+}
+
+.projeto-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.projeto-cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    border: 2px solid var(--link-color);
+    border-radius: 3rem;
+    gap:2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--link-color);
+    transition: .3s ease;
+}
+
+.projeto-cartao:hover{
+    box-shadow: 0 0 25px var(--link-color),
+                0 0 50px var(--link-color);
+    transform: scale(1.02);
+}
+
+.projeto-cartao img{
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.projeto-cartao h3{
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.projeto-cartao h3:hover{
+    transform: scale(1.03);
+    transition: .3s ease;
+
+}
+
+.projeto-cartao p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.projetos .texto{
+    color: var(--link-color);
+    font-size: 70px;
+}
+
+.projeto-cartao a{
+    color: var(--link-color);
+    text-decoration:underline;
+    font-size: 20px;
+    cursor: pointer;
+}
+

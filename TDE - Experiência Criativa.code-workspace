@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../PyCharmMiscProject"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TDE - Experiência Criativa"
+	}
+}
